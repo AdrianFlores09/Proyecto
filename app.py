@@ -8,7 +8,6 @@ build_dispersion = st.checkbox("Construir un Diagrama de Dispersión")
 
 if build_histogram: # si la casilla de verificación está seleccionada
     st.write('Construir un histograma para la columna odómetro')
-    px.title()
     fig = px.histogram(car_data, x="odometer", title="Conteo de odómetros con su respectivo recorrido")
     st.plotly_chart(fig, use_container_width=True)
     
