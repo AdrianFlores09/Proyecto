@@ -14,4 +14,4 @@ if build_histogram: # si la casilla de verificación está seleccionada
 if build_dispersion: # si la casilla de verificación está seleccionada
     st.write('Construir un diagrama de dispersión para la columna odómetro')
     fig = px.scatter(car_data, x="odometer", y="price", title="Precio de odómetros con su respectivo recorrido")
-    fig.show()
+    st.plotly_chart(fig)
